@@ -70,5 +70,17 @@ don't need to load the entire list
 in the memory
 
 ===
+Coding Problem 
+Creating your own Iterators 
+
+Create a sentence object 
+and when we loop over 
+we loop over the words in the sentence
+
+To create the class as iterable
+we have to have an __iter__ method
+and that __iter__ method
+has to return an object 
+that has a __next__ method 
 
 
