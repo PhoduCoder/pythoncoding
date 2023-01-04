@@ -88,5 +88,28 @@ Now generators are more simpler
 to create the iterator
 because they take care of 
 the iter and next methods
+====
 
+Ternary operation
+value_if_true condition value_if_false
 
+====
+break is to break out of the loop [for, while]
+
+continue is to continue the loop to the next iteration
+
+====
+
+Default params
+def function (param1, param2=value2):
+In the above function, 
+we have the param2 as a default argument
+If we don't pass the value for the second param2
+then it will get the value2
+**Note that default param will be always after 
+other params**
+===
+
+A value in the key-value pair can be a number, a string, a list, a tuple, or even another dictionary. In fact, you can use a value of any valid type in Python as the value in the key-value pair.
+
+A key in the key-value pair must be immutable. In other words, the key cannot be changed, for example, a number, a string, a tuple, etc.
