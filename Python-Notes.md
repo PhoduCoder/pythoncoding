@@ -83,4 +83,10 @@ and that __iter__ method
 has to return an object 
 that has a __next__ method 
 
+===
+Now generators are more simpler
+to create the iterator
+because they take care of 
+the iter and next methods
+
 
