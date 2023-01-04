@@ -51,3 +51,18 @@ print (next(my_sentence))
 #a 
 #sentence
 
+#==============
+# Doing the same via generators function
+# is much more simpler
+# because we no longer have to 
+# define the iter and next methods
+# generator takes care of that
+
+def sentence(sentence):
+    for word in sentence.split():
+        yield word
+
+my_decorator_sentence = sentence("This is through decorator")
+
+for word in my_decorator_sentence:
+    print (word)
