@@ -21,10 +21,13 @@ class Sentence:
         #this should return each word
         # in the passed sentence
         print("From the next function")
+        # The next method should 
+        # raise a StopIteration Exception
+        # once the looping is finished
         if (self.index >= len(self.words)):
             raise StopIteration
         index = self.index # Remembering the state 
-        self.index += 1
+        self.index += 1 
         return self.words[index]
 
 my_sentence = Sentence("This is a new sentence")
