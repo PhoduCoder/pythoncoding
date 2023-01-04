@@ -57,6 +57,7 @@ print (next(my_sentence))
 # because we no longer have to 
 # define the iter and next methods
 # generator takes care of that
+# neither raising the stopIteration Exception
 
 def sentence(sentence):
     for word in sentence.split():
