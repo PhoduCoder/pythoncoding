@@ -83,6 +83,21 @@ and that __iter__ method
 has to return an object 
 that has a __next__ method 
 
+=====
+
+The iter function can be used to create an iterator for most types of Python objects that are iterable, such as lists, strings, tuples, and some other built-in types like dicts. When you pass an iterable object to the iter function, it returns an iterator object that can be used to loop over the elements of the iterable.
+
+However, not all objects in Python are iterable. For example, a single number or a scalar value is not iterable, and trying to pass it to the iter function will raise a TypeError.
+
+Additionally, while the iter function can be used to create an iterator for many types of objects, there are some types of objects that have built-in iterator functionality that don't need to be passed to the iter function. For example, when you use a for loop to iterate over a list, the list itself is automatically converted to an iterator by Python, so you don't need to use the iter function.
+
+It's also worth noting that some types of objects, like file objects, have both an iterator interface and a non-iterator interface. For example, a file object can be read one line at a time using the file.readline() method, or it can be converted to an iterator using the iter function and read one line at a time using a for loop.
+
+In summary, the iter function can be used to create an iterator for most types of iterable objects in Python, but it cannot be used to create an iterator for non-iterable objects or objects that already have a built-in iterator interface.
+
+
+
+
 ===
 Now generators are more simpler
 to create the iterator
