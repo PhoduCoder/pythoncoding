@@ -53,6 +53,15 @@ until it gets the StopIteration Exception
 Iterators can only go forward
 
 ====
+Objects are iterable, if these objects has an iter() function that returns an iterator. 
+Lists, strings, and tuples, are iterable. 
+
+This also means that you can do a for loop over the iterable objects. 
+
+Every iterator has a next() function that will return the next item.
+
+
+====
 
 So we can add these methods to our own classes
 and make them iterable 
