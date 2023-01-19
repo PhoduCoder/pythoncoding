@@ -27,7 +27,42 @@ And when it doesn't have the next value
 then it raises a StopIteration Exception
 
 ====
+So how do i create an iterator. What are the tenets and show me an example?
 
+You can create your own iterator by defining a class that implements the __iter__() and __next__() methods.
+
+The __iter__() method should return the iterator object itself, typically self.
+The __next__() method should return the next value in the sequence and should raise a StopIteration exception when the iteration is complete.
+
+
+
+
+Fibonnaci Iterator Example
+
+
+class FibonacciIterator:
+    def __init__(self, max):
+        self.max = max
+        self.a = 0
+        self.b = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        fib = self.a
+        if fib > self.max:
+            raise StopIteration
+        self.a, self.b = self.b, self.a + self.b
+        return fib
+
+fib = FibonacciIterator(100)
+for n in fib:
+    print(n)
+
+
+
+======
 
 What about tuples, sets?
 
