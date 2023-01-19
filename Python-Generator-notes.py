@@ -21,3 +21,25 @@ for n in fibonacci_generator(100):
 
 ==================
 
+you can have custom logic in your generator function to determine the next value to be yielded.
+The yield statement is used to return a value from the generator function, but you can include any logic you want before or after the yield statement
+to determine what value to return.
+
+=================
+
+def even_generator(max):
+    current = 0
+    while current <= max:
+        if current % 2 == 0:
+            yield current
+        current += 1
+
+for num in even_generator(10):
+    print(num)
+
+    
+=================
+
+In this example, the generator function uses a while loop to iterate through the numbers from 0 to max, and it checks if the current number is even. If it is, it yields the value, otherwise it increments the current number and continues the loop. Once the loop has finished and the current number is greater than the max, the generator function ends and no more values are returned.
+
+You can implement any logic you want in the generator function to determine what value to yield next. This allows you to generate a sequence of values based on a specific algorithm or process.
