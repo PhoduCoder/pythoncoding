@@ -43,3 +43,27 @@ for num in even_generator(10):
 In this example, the generator function uses a while loop to iterate through the numbers from 0 to max, and it checks if the current number is even. If it is, it yields the value, otherwise it increments the current number and continues the loop. Once the loop has finished and the current number is greater than the max, the generator function ends and no more values are returned.
 
 You can implement any logic you want in the generator function to determine what value to yield next. This allows you to generate a sequence of values based on a specific algorithm or process.
+
+
+===
+The choice between using a generator or an iterator depends on the specific use case and the characteristics of the data you are working with.
+
+Here are a few general guidelines:
+
+Use an iterator when:
+
+You have a small and well-defined collection of data that you want to iterate over.
+You want to iterate over the same data multiple times.
+You need to access individual elements of the data by index.
+Use a generator when:
+
+You have a large or infinite collection of data that you don't want to store in memory all at once.
+You want to generate the data on-the-fly as you iterate over it.
+The logic for generating the data is complex.
+Iterators are more memory efficient as they only keep track of the current state of iteration and can be used multiple times, whereas generators generate the data on-the-fly, but once generator is exhausted, you can't use it again.
+
+Generators are useful for working with large or infinite sequences of data, such as reading large files, data processing, or generating random data.
+
+Iterators are useful for working with small, well-defined collections of data, such as lists, strings, or tuples, and for cases where you need to iterate over the same data multiple times.
+
+It's worth noting that, you can always convert a generator to an iterator by passing it to the iter() function, but once the generator is exhausted, it can't be used again.
