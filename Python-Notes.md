@@ -35,10 +35,11 @@ The __iter__() method should return the iterator object itself, typically self.
 The __next__() method should return the next value in the sequence and should raise a StopIteration exception when the iteration is complete.
 
 
-
+=======
 
 Fibonnaci Iterator Example
 
+======
 
 class FibonacciIterator:
     def __init__(self, max):
