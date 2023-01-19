@@ -128,3 +128,20 @@ other params**
 A value in the key-value pair can be a number, a string, a list, a tuple, or even another dictionary. In fact, you can use a value of any valid type in Python as the value in the key-value pair.
 
 A key in the key-value pair must be immutable. In other words, the key cannot be changed, for example, a number, a string, a tuple, etc.
+====
+
+QUESTIONS:
+
+How is iterator different from paging and virtual memory?
+
+You are correct that virtual memory, specifically paging, only loads the currently used pages of data into memory and pages out the ones that are not being used. This is similar to how an iterator works, in that it only loads a small piece of data into memory at a time.
+
+The difference is in the way the data is accessed and processed:
+
+With virtual memory and paging, the operating system is responsible for managing the pages of data that are in memory and swapping them in and out as needed. The program accesses the data in memory as it would normally, with no need to be aware of the fact that it is using virtual memory.
+
+With an iterator, the program has explicit control over how the data is accessed and when the next piece of data is loaded. The program can choose to load the next piece of data only when it needs it, and can process the current piece of data before loading the next one. This allows for more fine-grained control over memory usage, and can make it easier to work with very large data sets.
+
+In summary, virtual memory and paging are a way for the operating system to manage the memory of the computer to allow programs to work with larger data sets, whereas an iterator is a way for a program to explicitly manage the way it accesses and processes a sequence of data. Both have their own advantages and use cases, but an iterator gives more control over the data being processed.
+
+=========
