@@ -65,6 +65,33 @@ for n in fib:
 
 ======
 
+Even Number Iterator 
+
+class EvenIterator:
+    def __init__(self, max):
+        self.max = max
+        self.current = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        while self.current <= self.max:
+            if self.current % 2 == 0:
+                result = self.current
+                self.current += 1
+                return result
+            self.current += 1
+        raise StopIteration
+
+even_it = EvenIterator(10)
+for num in even_it:
+    print(num)
+
+
+
+==========
+
 What about tuples, sets?
 
 If something is iterable, then it should have 
