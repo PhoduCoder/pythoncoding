@@ -25,16 +25,16 @@ d.extend([3, 4, 5])
 print (d)
 print ("Deque output")
 
-# # Remove elements from the deque
-# print(d.pop()) # prints 5
-# print(d.popleft()) # prints 2
+# Remove elements from the deque
+print(d.pop()) # prints 5
+print(d.popleft()) # prints 2
 
-# # Access elements in the deque
-# print(d[0]) # prints 1
-# print(d[-1]) # prints 4
+# Access elements in the deque
+print(d[0]) # prints 1
+print(d[-1]) # prints 4
 
-# # Check if the deque is empty
-# print (d.empty()) # prints False
+
+
 
 
 
