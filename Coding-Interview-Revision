@@ -1,0 +1,69 @@
+
+Basic
+What is the difference between lists and tuples in Python?
+What are the key features of Python?
+What type of language is Python?
+How is Python an interpreted language?
+What do you know about pep 8?
+How is memory managed in Python?
+Describe the usage of the strip() function in Python.
+What do you know about namespace in Python?
+What do you know about Python PATH?
+Describe the usage of the replace() function in Python.
+What are Python modules?
+Describe the usage of the eval() function in Python.
+What are local and global variables in Python?
+What do you know about the map function in Python?
+What are the min() and max() functions in Python? What do they do?
+Describe the usage of the join() function in Python.
+What do you know about pickling and unpickling?
+How would you generate random numbers in Python?
+Explain split(), sub(), subn() methods of “re” module in Python.
+Describe the usage of the getattr() function in Python.
+How would you capitalize the first letter of string?
+What are the upper() and lower() functions in Python?
+What do you know about using help() and dir() functions in Python?
+Describe the usage of the reduce() function in Python.
+What are docstrings in Python?
+How would you convert a string to all lowercase?
+Describe the usage of the round() function in Python.
+How would you randomize the items of a list in place in Python?
+Describe the usage of the sorted() function in Python.
+What are Python iterators?
+How does break, continue and pass work?
+What do you know about the difference between range & xrange?
+Describe the usage of the split() function in Python.
+What do you know about the difference between Python Arrays and lists?
+Is indentation required in Python?
+
+
+
+Advanced
+How would you install Python on Windows and set the path variable?
+What do you know about the difference between deep and shallow copy?
+What are the benefits of using NumPy arrays over nested Python lists?
+What are the built-in types of Python?
+What are negative indexes, and why are they used?
+What do you know about self in Python?
+What do you know about a lambda function?
+What do you know about __init__?
+How would you get data from websites with Python web scraping?
+Talk about the experience you have had for the last few years in Python?
+Algorithms and Data Structures, Pythons Dicts - MultiValue Dicts, Range and Xrange, Iterators and Generators, Decorators
+How would you use the ternary operators in Python?
+Why isn’t all the memory de-allocated when Python exits?
+
+What do you know about monkey patching in Python?
+Explain Inheritance in Python with an example.
+What do you know about split used for?
+What do you know about the process of compilation and linking in Python?
+Explain split(), sub(), subn() methods of “re” module in Python.
+What do *args, **kwargs mean, and why do we use them?
+
+Explain what Flask is and its benefits?
+
+Algorithms
+Prime number
+Roman to decimal 
+All substring
+Reverse a list in a particular way, first is first, second is last of orig, third is second of orig, fourth is secondlast or orig
