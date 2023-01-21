@@ -12,10 +12,16 @@ def convert_num(pass_string):
     print (all_elements)
     sum = 0
     for j in all_elements:
-        sum = sum + my_roman_dict[j]
+        if (my_roman_dict[all_elements[j]] >= my_roman_dict[all_elements [j+1]]):
+            sum = sum + my_roman_dict [j]
+        else:
+            sum = sum - my_roman_dict [j]
+
+        #if j == "I" and (j+1) == "X"
+        #sum = sum + my_roman_dict[j]
     return sum
 
-given_roman="XXVII"
+given_roman="IX"
 
 equi_num = convert_num(given_roman)
 print (equi_num)

@@ -19,10 +19,10 @@ and MAY override the concrete method of the abstract class if needed
 
 from abc import ABC, abstractmethod
 class Shape(ABC):
-    def draw(self):
+    def draw(self): #concrete method
         print("drawing shape")
     @abstractmethod
-    def area(self):
+    def area(self): #abstract method
         pass
 
 class Rectangle(Shape):
@@ -67,6 +67,10 @@ it must implement all the abstract methods defined in that
 interface. If a class does not implement all the methods,
  it will result in a TypeError.
 ====
-
+Also for the inherited class inheriting the abstract class as well 
+it will have to implement all the abstract methods
+It won't throw an error like in interface 
+but it will again be an abstract class
+====
 
 
