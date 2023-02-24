@@ -1,0 +1,32 @@
+DR Strategies for Kubernetes
+
+Mix of mission critical vs business critical vs 
+non critical
+
+Has to be container granular
+Has to be namespace granular 
+
+Need to understand how your application 
+needs to be backed up.
+Different for Mysql, for cassandra
+for mongodb for ElasticSearch for Kafka
+
+Also needs to backup the application configuration
+as well as data 
+Appconfig [ things like PV, PVC, controllers, ]
+
+Round trip latency < 10 ms 
+Between two deployment sites ( be it AWS or Azure)
+
+Every write is replicated to standby 
+Objects are also replicated
+Any time they are deployed or 
+updated
+
+Snapshots of data and moving it over
+Async replication 
+
+
+
+
+
